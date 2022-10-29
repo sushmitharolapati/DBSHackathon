@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <title>
-        Booking Form
+        Flight Searching Form
     </title>
     <style>
         body{
@@ -104,14 +104,10 @@
                     <input type="date" class="form-control select-date"><br>
                     <label>Return Date:</label><br>
                     <input type="date" class="form-control select-date"><br>
-                    <label>Adults</label><br>
+                    <label>No of Tickets</label><br>
                     <input type="number" class="form-control" ><br>
-                    <label>Children</label><br>
-                    <input type="number" class="form-control"><br>
-                    <label>Class</label><br>
-                    <select class="custom-select">
-                        <option>Economy Class</option>
-                        <option>Business Class</option>
+                    
+                    
                     </select><br>
                     <button onclick=document.location="bflights.jsp">Search Flights</button>
                 </div>
