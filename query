@@ -1,0 +1,35 @@
+create table flight(flight_number int NOT NULL,flight_trip_id int,no_of_seats int,
+ PRIMARY KEY (flight_number),flight_name varchar(32)
+ );   --flight_table
+ 
+ 
+ create table flight_trips(flight_trip_id int NOT NULL,from_city varchar(50) NOT NULL,to_city varchar(50) NOT NULL,arrival_time datetime NOT NULL,departure_time datetime NOT NULL,
+no_of_seats int,flight_number int NOT
+NULL);    --flight_trips table
+
+INSERT INTO flight
+VALUES (1,1,100,'Air India');
+INSERT INTO flight
+VALUES (2,1,100,'Indigo');
+INSERT INTO flight
+VALUES (1,2,100,'Air India');
+INSERT INTO flight
+VALUES (2,2,100,'Indigo');
+INSERT INTO flight
+VALUES (1,1,100,'Emirates');
+INSERT INTO flight
+VALUES (1,1,100,'Vistara');
+INSERT INTO flight
+VALUES (1,1,100,'Spice-jet');
+INSERT INTO flight
+VALUES (1,1,100,'Deccan');
+INSERT INTO flight
+VALUES (1,2,100,'Emirates');
+INSERT INTO flight
+VALUES (1,2,100,'Spice-jet');
+
+
+
+
+select flight_name from flight;  --for flightnames
+
