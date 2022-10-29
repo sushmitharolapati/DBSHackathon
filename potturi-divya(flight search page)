@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Booking Form
+    </title>
+    <style>
+        body{
+            background-image: url('https://i.pinimg.com/originals/de/41/53/de415334320dd313b583016db0352e93.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        button{
+                 background-color: darkgoldenrod;
+                 border: none;
+                 border-radius: 8px;
+                 color: rgb(15, 15, 15);
+                 padding: 4px 8px;
+                 text-align: center;
+                 text-decoration: none;
+                 display: inline-block;
+                 font-size: 16px;
+                 margin: 4px 2px;
+                 transition-duration: 0.4s;
+                 cursor: pointer;
+            }
+            button:hover{
+                background-color: black;
+                color:white;
+                box-shadow: 3px;
+            }
+        .booking-form-space
+            {
+                max-width: 400px;
+                border: 5px solid black;
+                margin: 10% auto 0;
+                font-weight: bolder;
+            }
+            .booking-form{
+                font-weight: bolder;
+            }
+            .form-control{
+                font-size: 12px;
+                border-radius: 4px;
+                color:black;
+            }
+            .custom-select{
+                background-color: darkgoldenrod;
+                 border: none;
+                 color: rgb(15, 15, 15);
+                 padding: 4px 8px;
+                 text-align: center;
+                 text-decoration: none;
+                 display: inline-block;
+                 font-size: 16px;
+                 margin: 4px 2px;
+                 transition-duration: 0.4s;
+                 cursor: pointer;
+            }
+            .custom-select:hover{
+                background-color: black;
+                color: white;
+            }
+             input{
+                background-color: white;
+                border: none;
+                border-radius: 5px;
+                 color: rgb(15, 15, 15);
+                 padding: 4px 8px;
+                 text-align: left;
+                 text-decoration: none;
+                 display: inline-block;
+                 font-size: 16px;
+                 margin: 4px 2px;
+                 transition-duration: 0.4s;
+                 cursor: pointer;
+            }
+            input:hover{
+                background-color: burlywood;
+            }
+    </style>
+    <body>
+        <div class="booking-form-space">
+            <div class="radio-btn">
+                <input type="radio" class="btn" name="check" checked="checked">
+                <span>RoundTrip</span>
+                <input type="radio" class="btn" name="check" checked="checked">
+                <span>One Way</span>
+            </div><br>
+            <div class="booking-form">
+                <form name="f3" method="POST" action="bflights.jsp">
+                <table class="book">
+                <tr>
+                <td>Your Source:</td><br>
+                <td><input type="text" name="src"></td>
+                </tr>
+                <tr>
+                <td>Your Destination:</td><br>
+                <td><input type="text" name="destn"></td>
+                </tr>
+                </table>
+                <div class="date-grp">
+                    <label>Depart Date:</label><br>
+                    <input type="date" class="form-control select-date"><br>
+                    <label>Return Date:</label><br>
+                    <input type="date" class="form-control select-date"><br>
+                    <label>Adults</label><br>
+                    <input type="number" class="form-control" ><br>
+                    <label>Children</label><br>
+                    <input type="number" class="form-control"><br>
+                    <label>Class</label><br>
+                    <select class="custom-select">
+                        <option>Economy Class</option>
+                        <option>Business Class</option>
+                    </select><br>
+                    <button onclick=document.location="bflights.jsp">Search Flights</button>
+                </div>
+            </div>
+            </div>
+    </body>
+</html>
