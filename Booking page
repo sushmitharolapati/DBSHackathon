@@ -1,0 +1,37 @@
+<div class="container" style="background-color:azure;">
+<form method="POST">
+  <br>
+  <h2 style="background-color:aliceblue;">Book Your Flight</h2>
+  <br>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Flight Name</label>
+    <div class="col-sm-10">
+      <input type="Flight Name" class="form-control"  required >
+    </div>
+  </div>
+  <br>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">From City</label>
+    <div class="col-sm-10">
+      <input type="From City" class="form-control" required>
+    </div>
+  </div>
+  <br>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">To City</label>
+    <div class="col-sm-10">
+      <input type="To City" class="form-control" required>
+    </div>
+  </div>
+  <br>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Number of Bookings</label>
+    <div class="col-sm-10">
+      <input type="Number of Bookings" class="form-control" required>
+    </div>
+  </div>
+  
+  <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
